@@ -31,7 +31,7 @@ int main() {
             myNumbers[i].processed = true;
             bool duplicate = false;
             for (int j = i + 1; j < n; j++) {
-                if (myNumbers[j] == number) {
+                if (myNumbers[j].number == number) {
                     if (!duplicate) {
                         duplicate = true;
                         duplicates++;
@@ -44,6 +44,6 @@ int main() {
 
     printf("There were a %d duplicates in your list.\n", duplicates);
     printf("See you around, mate!\n");
-    
+
     return 0;
 }
